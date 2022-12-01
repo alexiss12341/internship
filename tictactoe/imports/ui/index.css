@@ -1,0 +1,92 @@
+body {
+    font: 24px "Barlow Semicondensed";
+    background-color: #8fc5dd;
+    color: white;
+  }
+  
+  ol, ul {
+    padding-left: 30px;
+  }
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  h1 {
+    text-align: center;
+  }
+  .reset{
+    position: relative;
+    left: 36%;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    background-color: #005799;
+    border-width: 0;
+    border-radius: 15px;
+    font-size: 24px;
+    padding: 5px;
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    ;
+  }
+  .status {
+    border-radius: 10px;
+    background-color: #005799;
+    margin-top:250px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 5px;
+    font-size: 36px;
+    
+  }
+  
+  .square {
+    border-radius: 15px;
+    background: #0181ca;
+    border: 4px solid #8fc5dd;
+    float: left;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 84px;
+    height: 84px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 84px;
+    color:white;
+    
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #ddd;
+  }
+  
+  .game {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .game-info {
+    margin-left: 20px;
+  }
+  .game-board {
+    margin: auto;
+  }
+  .reset-button {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    size: 20px;
+    text-align: center;
+    margin: auto;
+  }
+
+  
