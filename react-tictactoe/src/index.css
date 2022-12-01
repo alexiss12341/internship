@@ -1,7 +1,9 @@
 body {
     font: 24px "Barlow Semicondensed";
-    background-color: #8fc5dd;
+    background-color: #A4D8D8;
     color: white;
+    position: relative;
+    left: 5%;
   }
   
   ol, ul {
@@ -87,4 +89,26 @@ body {
     margin: auto;
   }
 
+  .scores{
+    position:relative;
+    left:-51.3%;
+    list-style-type: none;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #005799;
+    color: white;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 150px;
+    margin-bottom: auto;
+  }
   
+  li{
+    display: inline-block;
+  }
+  
+  .filler{
+    color: #005799;
+  }

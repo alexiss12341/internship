@@ -19,9 +19,6 @@ function Square(props){
         this.state = {
             squares: Array(9).fill(null),
             turn: true,
-            xwins: 0,
-            owins: 0,
-
         };
         this.initialState = this.state;
     }
@@ -90,7 +87,37 @@ function Square(props){
       );
     }
   }
-  
+  class Scores extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+          xWins: 0,
+          oWins: 0,
+        };
+    }
+
+    
+
+    render(){
+      return(
+        <div>
+          <li>
+            <div> X Wins</div>
+            <div>{this.state.xWins}</div>            
+          </li>
+
+          <li className= "filler"><div>x</div></li>
+          <li className= "filler"><div>x</div></li>
+          <li>
+            <div> O Wins</div>
+            <div>{this.state.oWins}</div>            
+          </li>
+        </div>
+        
+      )
+    }
+  }
+
   class Game extends React.Component {
     render() {
       return (
@@ -102,6 +129,9 @@ function Square(props){
             <div>{/* status */}</div>
             <ol>{/* TODO */}</ol>
           </div>
+          <div className ="scores">
+            <Scores />
+          </div>
         </div>
       );
     }
@@ -110,6 +140,7 @@ function Square(props){
   // ========================================
   
   const root = ReactDOM.createRoot(document.getElementById("root"));
+
   root.render(<Game />);
   function calculateWinner(squares) {
     const lines = [
